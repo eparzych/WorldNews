@@ -4,7 +4,7 @@ import "./content.scss";
 export const Content = () => {
     return(
         <>
-            <p>Content</p>
+            <p className="content">Content</p>
         </>
     )
 }

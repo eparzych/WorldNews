@@ -1,6 +1,19 @@
 //fonts
 $basicFont: 'Quicksand', sans-serif;
 
-// colors
+//colors
+$color-green: #55DFB4;
+$color-grey: #e0e0e0;
+$color-light-grey: #F7F7F7;
+$color-dark-grey: #616161;
+$color-primary: #08A6E4;
 
-//mixins
+//height components
+$height-header: 7rem;
+$height-footer: 5rem;
+
+@mixin center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

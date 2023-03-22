@@ -3,8 +3,10 @@ import "./footer.scss";
 
 export const Footer = () => {
     return(
-        <>
-            <p>Footer</p>
-        </>
+        <div className="footer">
+            <div className="container">
+                Footer
+            </div>
+        </div>
     )
 }

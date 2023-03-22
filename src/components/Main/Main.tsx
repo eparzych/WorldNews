@@ -5,10 +5,11 @@ import { Content } from "../Content/Content";
 
 export const Main = () => {
     return(
-        <>
-            <p>Main</p>
-            <Sidebar />
-            <Content />
-        </>
+        <div className="container">
+            <div className="main">
+                <Sidebar/>
+                <Content/>
+            </div>
+        </div>
     )
 }
