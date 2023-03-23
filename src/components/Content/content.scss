@@ -1,6 +1,10 @@
+@import "../../styles/variables";
+
 .content {
     grid-area: content;
+    padding: 2rem;
     height: 100%;
     overflow-y: auto;
-    background: green;
+    border-radius: .3rem;
+    background: $color-main;
 }

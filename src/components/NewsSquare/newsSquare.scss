@@ -1,0 +1,28 @@
+@import "../../styles/variables";
+
+.news-square {
+    margin: 1rem;
+    min-width: 23rem;
+    width: 30%;
+    height: 30rem;
+    border-radius: .3rem;
+    background-color: $color-paper;
+    color: #757575;
+
+    &__img {
+        height: 60%;
+        background: #ddd;
+    }
+    &__content {
+        height: 40%;
+        padding: 1.8rem;  
+ 
+        .content__text {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}

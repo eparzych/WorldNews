@@ -1,10 +1,12 @@
 import React from "react";
 import "./content.scss";
+import { NewsSquareList } from "../NewsSquareList/NewsSquareList";
 
 export const Content = () => {
     return(
-        <>
-            <p className="content">Content</p>
-        </>
+        <div className="content">
+            <h3 className="countent__title">INFORMACJE Z KRAJU XYZ</h3>
+            <NewsSquareList />
+        </div>
     )
 }
