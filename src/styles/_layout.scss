@@ -6,11 +6,12 @@
 
 :root {
     font-size: 10px;
+    color: $color-font;
 }
 
 body {
     font-family: $basicFont;
-    background: #ddd;
+    background: $color-bg;
 }
 
 .app {

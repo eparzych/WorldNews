@@ -2,14 +2,23 @@
 $basicFont: 'Quicksand', sans-serif;
 
 //colors
+$color-bg: #20282D;
+$color-country: #565f64d0;
+$color-font: #FFF;
+$color-footer: rgba(255, 255, 255, .2);
 $color-green: #55DFB4;
 $color-grey: #e0e0e0;
 $color-light-grey: #F7F7F7;
 $color-dark-grey: #616161;
+$color-main: rgba(255, 255, 255, .5);
+$color-paper: #F9FAFB;
 $color-primary: #08A6E4;
+$color-shadow: rgba(0, 0, 0, .2);
+$color-sidebar: rgba(255, 255, 255, .1);
 
 //height components
 $height-header: 7rem;
+$height-main: calc(100vh - 15rem);
 $height-footer: 5rem;
 
 @mixin center {
