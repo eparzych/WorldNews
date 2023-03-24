@@ -12,6 +12,7 @@
 body {
     font-family: $basicFont;
     background: $color-bg;
+    font-size: 1.6rem;
 }
 
 .app {
@@ -37,15 +38,22 @@ body {
   }
 
   @include tablet {
-    grid-template-columns: 1fr 3fr;
-  }
-
-  @include mobile {
-    grid-template-columns: 1fr;
-    grid-template-rows: $height-header 1fr 5fr $height-footer;
+    grid-template-columns: 1fr 0fr;
     grid-template-areas:
-    "sidebar"
-    "content";
+    "content sidebar";
+
+    .sidebar {
+      position: fixed;
+      left: 100vw;
+      height: 100%;
+      width: 100vw;
+      transition: all .4s ease-in-out;
+    }
+
+    .sidebar--open {
+      transform: translate(-100%, 0);
+      z-index: 2;
+    }
   }
 }
 
