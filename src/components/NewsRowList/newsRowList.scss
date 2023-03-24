@@ -1,0 +1,47 @@
+@import "../../styles/variables";
+
+.news-row {
+    &-list{
+        width: 100%;
+        table-layout: fixed;
+        margin-top: 1.5rem;
+    }
+    &__header {
+        text-align: left;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        th {
+            padding: 1rem;
+            background-color: $color-table-header;
+        }
+        th:first-child {
+            border-radius: .5rem 0 0 0;
+        }
+        th:last-child {
+            border-radius: 0 .5rem 0 0 ;
+        }
+    }
+    &__item {
+        transition: background-color .2s;
+        
+        &:hover {
+            background-color: $color-hover;
+        }
+        td {
+            padding: 2.2rem 1rem;
+            border-bottom: 1px solid white;
+            cursor: pointer;
+        }
+        .content {
+            &__title {
+                text-transform: uppercase;
+                font-weight: bold;
+                text-shadow: .2rem .2rem $color-shadow;
+            }
+            &__date {
+                white-space: nowrap;
+            }
+        }
+    }
+}
