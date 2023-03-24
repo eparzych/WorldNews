@@ -1,10 +1,10 @@
 import { ChangeEvent } from "react";
 import { BsEmojiWink} from "react-icons/bs";
 import { Link } from "react-router-dom";
-import type { RootState } from '../../app/store'
-import { useSelector, useDispatch } from 'react-redux'
+import type { RootState } from "../../app/store";
+import { useSelector, useDispatch } from "react-redux";
 import { ToggleButton } from "../ToggleButton/ToggleButton";
-import { open, close } from '../../features/sidebar/sidebarSlice';
+import { open, close } from "../../features/sidebar/sidebarSlice";
 import "./header.scss";
 
 export const Header = () => {
@@ -12,7 +12,6 @@ export const Header = () => {
     const dispatch = useDispatch()
 
     const handleCheckbox = (e: ChangeEvent<HTMLInputElement>) => {
-        console.log("change", e.target.checked)
         if (e.target.checked) {
             dispatch(open());
         } else {

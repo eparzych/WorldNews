@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
 export interface SidebarState {
   isOpen: boolean;
@@ -22,6 +22,6 @@ export const sidebarSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { open, close } = sidebarSlice.actions
+export const { open, close } = sidebarSlice.actions;
 
-export default sidebarSlice.reducer
+export default sidebarSlice.reducer;
