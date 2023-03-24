@@ -1,10 +1,11 @@
 import { ChangeEvent } from "react";
 import { BsEmojiWink} from "react-icons/bs";
-import { ToggleButton } from "../ToggleButton/ToggleButton";
-import "./header.scss";
+import { Link } from "react-router-dom";
 import type { RootState } from '../../app/store'
 import { useSelector, useDispatch } from 'react-redux'
-import { open, close } from '../../features/sidebar/sidebarSlice'
+import { ToggleButton } from "../ToggleButton/ToggleButton";
+import { open, close } from '../../features/sidebar/sidebarSlice';
+import "./header.scss";
 
 export const Header = () => {
     const sidebarOpen = useSelector((state: RootState) => state.sidebar.isOpen)
@@ -22,9 +23,9 @@ export const Header = () => {
     return(
         <header className="header">
             <div className="header__container container">
-                <a href="/" className="logo">
+                <Link to="/" className="logo">
                     gn<span className="logo__text">News</span>
-                </a>
+                </Link>
                 <button className="btn"><BsEmojiWink/></button>
                 <ToggleButton/>
                 <nav>
