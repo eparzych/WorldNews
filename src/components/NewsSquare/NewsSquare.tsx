@@ -1,20 +1,22 @@
 import { useState } from "react";
 import { CiImageOff } from "react-icons/ci";
+import { Article } from "../../types/article";
 import { ModalNews } from "../ModalNews/ModalNews";
 import "./newsSquare.scss";
 
-export const NewsSquare = (props: any) => {
-    const { article } = props;
-    const [isOpen, setOpen] = useState<Boolean>(false);
+interface IProps {
+    article: Article;
+}
 
-    function openNewsPopup (){
-        setOpen(!isOpen);
-    }
+export const NewsSquare = (props: IProps) => {
+    const { article } = props;
+    const [isOpen, setOpen] = useState<boolean>(false);
+
     return(
         <>
-            <article className="news-square" onClick={openNewsPopup}>
+            <article className="news-square" onClick={() => setOpen(true)}>
                 <div className="news-square__img">
-                    { article.urlToImage ? 
+                    { article.urlToImage ?
                         <img src={article.urlToImage} alt="picture" />
                     :
                         <div className="img--not-found">
@@ -30,7 +32,7 @@ export const NewsSquare = (props: any) => {
                     <div className="content__text">{article.description}</div>
                 </div>
             </article>
-            <ModalNews isOpen={isOpen} onClose={openNewsPopup} article={article}/>
+            { isOpen && <ModalNews isOpen={true} onClose={() => setOpen(false)} article={article}/> }
         </>
     )
 }

@@ -1,11 +1,16 @@
+import { NewsData } from "../../types/article";
 import { NewsSquare } from "../NewsSquare/NewsSquare";
 import "./newsSquareList.scss";
 
-export const NewsSquareList = (props: any) => {
+interface IProps {
+    news: NewsData;
+}
+
+export const NewsSquareList = (props: IProps) => {
     const { news } = props;
     return(
         <div className="newsSquareList">
-            { news && news.articles.map((article: any) => <NewsSquare article={article} />) }
+            { news.articles.map(article => <NewsSquare article={article} key={article.url} />) }
         </div>
     )
 }

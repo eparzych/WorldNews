@@ -12,7 +12,7 @@ export const Header = () => {
     const sidebarOpen = useSelector((state: RootState) => state.sidebar.isOpen);
     const dispatch = useDispatch();
 
-    const [isOpen, setOpen] = useState<Boolean>(false);
+    const [isOpen, setOpen] = useState<boolean>(false);
 
     function openModalTask(){
         setOpen(!isOpen);

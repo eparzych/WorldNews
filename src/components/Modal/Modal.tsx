@@ -4,7 +4,13 @@ import "./modal.scss";
 
 Modal.setAppElement('#modal');
 
-export const CustomModal = (props: any) => {
+interface IProps {
+  isOpen: boolean;
+  onClose: any;
+  children: any;
+}
+
+export const CustomModal = (props: IProps) => {
   const { isOpen, onClose } = props;
 
   return (

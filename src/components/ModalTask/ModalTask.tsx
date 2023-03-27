@@ -1,6 +1,11 @@
 import { CustomModal } from "../Modal/Modal";
 
-export const ModalTask = (props: any) => {
+interface IProps {
+    isOpen: boolean;
+    onClose: Function;
+}
+
+export const ModalTask = (props: IProps) => {
     const { isOpen, onClose } = props;
 
     return (

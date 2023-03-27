@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
+import { Article } from "../../types/article";
 import { CustomModal } from "../Modal/Modal";
 import "./modalNews.scss";
 
-export const ModalNews = (props: any) => {
+interface IProps {
+    isOpen: boolean;
+    onClose: Function;
+    article: Article;
+}
+
+export const ModalNews = (props: IProps) => {
     const { isOpen, onClose, article } = props;
 
     return (
