@@ -6,7 +6,7 @@ import { ContentView } from "../../features/content/contentSlice";
 import "./content.scss";
 import { NewsSquareList } from "../NewsSquareList/NewsSquareList";
 import { NewsRowList } from "../NewsRowList/NewsRowList";
-import { fetchNews } from "../../api/news";
+import { fetchNews } from "../../api/newsMock";
 
 export const Content = () => {
     const {countryCode} = useParams();
@@ -16,7 +16,7 @@ export const Content = () => {
     useEffect(() => {
         if (countryCode) {
             fetchNews(countryCode)
-                .then(response => response.json())    
+                .then(response => response.json())
                 .then(data => setNewsData(data))
         }
     }, [countryCode]);
