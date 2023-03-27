@@ -1,7 +1,6 @@
-import React from "react";
-import "./main.scss";
 import { Sidebar } from "../Sidebar/Sidebar";
 import { Content } from "../Content/Content";
+import "./main.scss";
 
 export const Main = () => {
     return(

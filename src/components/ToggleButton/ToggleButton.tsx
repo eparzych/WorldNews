@@ -1,6 +1,6 @@
 import { HiRectangleGroup } from "react-icons/hi2";
 import { CgList } from "react-icons/cg";
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector, useDispatch } from "react-redux";
 import type { RootState } from "../../app/store";
 import { ContentView, setView } from "../../features/content/contentSlice";
 import "./toggleButton.scss";

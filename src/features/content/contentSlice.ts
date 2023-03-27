@@ -3,15 +3,15 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 
 export enum ContentView {
     row,
-    square
+    square,
 }
 
 export interface ContentViewState {
-  contentView: ContentView
+  contentView: ContentView;
 }
 
 const initialState: ContentViewState = {
-  contentView: ContentView.square
+  contentView: ContentView.square,
 }
 
 export const contentViewSlice = createSlice({

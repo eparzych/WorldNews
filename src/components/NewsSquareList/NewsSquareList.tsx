@@ -1,4 +1,3 @@
-import React from "react";
 import { NewsSquare } from "../NewsSquare/NewsSquare";
 import "./newsSquareList.scss";
 
