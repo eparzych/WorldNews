@@ -8,6 +8,7 @@
     border-radius: .3rem;
     background-color: $color-paper;
     color: #757575;
+    cursor: pointer;
 
     &__img {
         height: 55%;
@@ -33,12 +34,19 @@
         height: 45%;
         padding: 1.8rem;  
  
-        .content__text {
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2;
-            overflow: hidden;
-            text-overflow: ellipsis;
+        .content {
+            &__title,
+            &__subtitle,
+            &__text {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            &__text {
+                -webkit-line-clamp: 3;  
+            }
         }
     }
 }

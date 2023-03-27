@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+
+.article {
+    font-size: 2rem;
+    margin-top: 1rem;
+
+    &__content,
+    &__author,
+    &__url {
+        padding: .5rem 0;
+        span {
+            font-weight: bolder;
+            color: $color-country-hover;
+        }
+    }
+    .link {
+        word-break: break-all;
+        color: $color-green;
+    }
+}
