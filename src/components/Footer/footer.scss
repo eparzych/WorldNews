@@ -4,4 +4,11 @@
     grid-area: footer;
     background: $color-footer;
     box-shadow: 0px -1px 8px 0px rgba(0, 0, 0, .2);
+
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
 }
