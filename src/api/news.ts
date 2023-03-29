@@ -3,5 +3,12 @@ export const fetchNews = (country: string) => {
         headers: {
             "X-Api-Key": process.env.REACT_APP_API_KEY!
         }
-    });
+    })
+    .then(response => {
+        if (response.ok) {
+            return response.json()
+        } else {
+            throw new Error(`HTTP error ${response.status}`)
+        }
+    })
 }
