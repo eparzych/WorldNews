@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.scss';
-import { Header } from "./components/Header/Header";
-import { Main } from "./components/Main/Main";
-import { Footer } from "./components/Footer/Footer";
-import { NotFound } from "./components/NotFound/NotFound"
+import { Header } from "../Header/Header";
+import { Main } from "../Main/Main";
+import { Footer } from "../Footer/Footer";
+import { NotFound } from "../NotFound/NotFound"
 
 function App() {
   return (
