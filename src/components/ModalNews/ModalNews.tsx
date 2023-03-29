@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Article } from "../../types/article";
 import { CustomModal } from "../Modal/Modal";
 import "./modalNews.scss";

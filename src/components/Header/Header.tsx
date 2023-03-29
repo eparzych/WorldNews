@@ -34,8 +34,8 @@ export const Header = () => {
                     gn<span className="logo__text">News</span>
                 </Link>
                 <button className="btn" onClick={openModalTask}><BsEmojiWink/></button>
-                <ToggleButton/>
-                <nav>
+                <nav className="menu">
+                    <ToggleButton/>
                     <input type="checkbox" className="menu__btn" id="menu__btn" checked={sidebarOpen} onChange={handleCheckbox} />
                     <label htmlFor="menu__btn" className="menu__toggle">
                         <span></span>

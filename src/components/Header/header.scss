@@ -27,6 +27,8 @@
 }
 
 .menu {
+  display: flex;
+  align-items: center;
   &__btn {
     display: none;
 
@@ -53,6 +55,8 @@
 
     @include tablet {
       display: block;
+      margin-left: 2rem;
+      cursor: pointer;
     }
 
     span {
