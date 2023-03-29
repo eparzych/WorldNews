@@ -22,7 +22,7 @@ export const ModalNews = (props: IProps) => {
                 <p className="article__author"><span>Autor: </span>{article?.author}</p>
                 <p className="article__url">
                     <span>Zobacz więcej pod: </span>
-                    <Link to={article?.url} className="link">{article?.url}</Link>
+                    <a href={article?.url} className="link" target="_blank">{article?.url}</a>
                 </p>
             </article>
         </CustomModal>
