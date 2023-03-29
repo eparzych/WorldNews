@@ -19,9 +19,8 @@ body {
     display: grid;
     width: 100%;
     height: 100vh;
-    grid-template-rows: $height-header 1fr $height-footer;
+    grid-template-rows: 1fr $height-footer;
     grid-template-areas:
-    "header"
     "main"
     "footer";
 }

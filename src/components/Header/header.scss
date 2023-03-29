@@ -2,9 +2,11 @@
 @import "../../styles/breakpoints";
 
 .header {
-  grid-area: header;
   box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
   background-color: $color-light-grey;
+  width: 100%;
+  height: $height-header;
+  position: fixed;
 
   &__container {
     display: flex;
@@ -16,10 +18,9 @@
 }
 
 .logo {
-  font-size: 27px;
+  font-size: 2.7rem;
   font-weight: bold;
   color: $color-green;
-
   &__text {
       color: $color-primary;
   }
@@ -55,8 +56,8 @@
     }
 
     span {
-      width: 20px;
-      height: 2px;
+      width: 2rem;
+      height: .2rem;
       display: block;
       margin-bottom: 3px;
       background-color: $color-primary;
