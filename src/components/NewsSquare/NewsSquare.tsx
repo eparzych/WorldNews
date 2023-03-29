@@ -28,7 +28,9 @@ export const NewsSquare = (props: IProps) => {
                 <div className="news-square__content">
                     <h2 className="content__title">{article.title}</h2>
                     <p className="content__subtitle">{article.source.name}</p>
-                    <p className="content__date">{article.publishedAt}</p>
+                    <p className="content__date">
+                        {new Date(article.publishedAt).toLocaleDateString()}
+                    </p>
                     <div className="content__text">{article.description}</div>
                 </div>
             </article>

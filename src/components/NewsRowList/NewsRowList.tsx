@@ -26,7 +26,9 @@ export const NewsRowList = (props: IProps) => {
                         <tr key={article.url} className="news-row__item" onClick={() => setOpenedArticle(article)}>
                             <td className="content__title">{article.title}</td>
                             <td className="content__subtitle">{article.source.name}</td>
-                            <td className="content__date">{article.publishedAt}</td>
+                            <td className="content__date">
+                                {new Date(article.publishedAt).toLocaleDateString()}
+                            </td>
                         </tr>
                 )}
                 </tbody>
