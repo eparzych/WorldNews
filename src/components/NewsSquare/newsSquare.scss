@@ -1,13 +1,13 @@
 @import "../../styles/variables";
+@import "../../styles/breakpoints";
 
 .news-square {
+    height: 38rem;
     margin: 1rem;
-    min-width: 23rem;
-    width: 30%;
-    height: 34rem;
-    border-radius: .3rem;
+    border-radius: .5rem;
     background-color: $color-paper;
     color: #757575;
+    font-size: 1.5rem;
     cursor: pointer;
 
     &__img {
@@ -37,12 +37,28 @@
         .content {
             &__title,
             &__subtitle,
+            &__date,
             &__text {
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
-                -webkit-line-clamp: 2;
+                -webkit-line-clamp: 1;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                margin-bottom: .5rem;
+            }
+            &__title {
+                -webkit-line-clamp: 3; 
+                text-transform: uppercase;
+                font-weight: bolder;
+            }
+            &__subtitle {
+                color: $color-primary;
+                font-weight: bolder;
+                font-size: 1.4rem;
+            }
+            &__date {
+                font-weight: bolder;
+                font-size: 1.4rem;
             }
             &__text {
                 -webkit-line-clamp: 3;  

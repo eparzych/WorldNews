@@ -1,8 +1,10 @@
 @import "../../styles/variables";
+@import "../../styles/breakpoints";
 
 .news-row {
     &-list{
         width: 100%;
+        min-width: 28rem;
         table-layout: fixed;
         margin-top: 1.5rem;
     }
@@ -42,6 +44,28 @@
             &__date {
                 white-space: nowrap;
             }
+        }
+    }
+}
+
+@include tablet {
+    .news-row {
+        &__header {
+            font-size: 1.6rem;
+        }
+        &__item {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@include mobile {
+    .news-row {
+        &__header {
+            font-size: 1.2rem;
+        }
+        &__item {
+            font-size: 1rem;
         }
     }
 }

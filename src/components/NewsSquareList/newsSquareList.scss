@@ -1,4 +1,8 @@
+@import "../../styles/variables";
+
 .newsSquareList {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    margin: 0 auto;
+    max-width: 100%;
 }
