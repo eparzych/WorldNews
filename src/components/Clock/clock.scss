@@ -4,4 +4,10 @@
     margin-right: 1rem;
     color: $color-primary;
     font-weight: bolder;
+    display: flex;
+
+    .clock-icon {
+        align-self: center;
+        margin-right: .3rem;
+    }
 }

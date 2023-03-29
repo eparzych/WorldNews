@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { AiOutlineClockCircle } from "react-icons/ai";
 import "./clock.scss";
 
 export const Clock = () => {
@@ -17,6 +18,7 @@ export const Clock = () => {
 
   return (
     <span className="clock">
+      <AiOutlineClockCircle className="clock-icon"/>
       {date.toLocaleTimeString()}
     </span>
   );
