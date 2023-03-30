@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Article } from "../../types/article";
 import { CustomModal } from "../Modal/Modal";
 import "./modalNews.scss";
@@ -10,6 +11,7 @@ interface IProps {
 
 export const ModalNews = (props: IProps) => {
     const { isOpen, onClose, article } = props;
+    const { t } = useTranslation();
 
     return (
         <CustomModal
@@ -17,11 +19,19 @@ export const ModalNews = (props: IProps) => {
             onClose={onClose}
         >
             <article className="article">
-                <p className="article__content">{article?.content}</p>
-                <p className="article__author"><span>Autor: </span>{article?.author}</p>
+            <h2 className="article__title">{article.title}</h2>
+                <p className="article__content">
+                    {article?.content}
+                </p>
+                <p className="article__author">
+                    <span>{t("author")}</span>
+                    {article?.author}
+                </p>
                 <p className="article__url">
-                    <span>Zobacz więcej pod: </span>
-                    <a href={article?.url} className="link" target="_blank">{article?.url}</a>
+                    <span>{t("seeMore")}</span>
+                    <a href={article?.url} className="link" target="_blank">
+                        {article?.url}
+                    </a>
                 </p>
             </article>
         </CustomModal>

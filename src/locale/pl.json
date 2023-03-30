@@ -1,0 +1,28 @@
+{
+    "translation": {
+        "articlePublishedAt": "Data publikacji",
+        "articleSource": "Źródło",
+        "articleTitle": "Tytuł artykułu",
+        "author": "Autor:",
+        "seeMore": "Zobacz więcej pod:",
+        "title": "INFORMACJE Z KRAJU:",
+        "country": {
+            "pl": "Polska",
+            "us": "USA",
+            "ar": "Argentyna",
+            "at": "Austria",
+            "au": "Australia",
+            "be": "Belgia",
+            "bg": "Bułgaria",
+            "br": "Brazylia",
+            "ca": "Kanada",
+            "ch": "Szwajcaria",
+            "co": "Kolumbia",
+            "cu": "Kuba",
+            "cz": "Czechy",
+            "de": "Niemcy",
+            "fr": "Francja",
+            "lt": "Litwa"
+        }
+    }
+}

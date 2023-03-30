@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import type { RootState } from "../../app/store";
 import { ContentView } from "../../features/content/contentSlice";
+import { useTranslation } from "react-i18next";
 import "./content.scss";
 import { NewsSquareList } from "../NewsSquareList/NewsSquareList";
 import { NewsRowList } from "../NewsRowList/NewsRowList";
@@ -14,6 +15,7 @@ export const Content = () => {
     const {countryCode} = useParams();
     const [ newsData, setNewsData ] = useState<NewsData>();
     const contentView = useSelector((state: RootState) => state.content.contentView);
+    const { t } = useTranslation();
 
     useEffect(() => {
         if (countryCode) {
@@ -25,7 +27,7 @@ export const Content = () => {
 
     return(
         <div className="content">
-            <h3 className="countent__title">INFORMACJE Z KRAJU: {countryCode}</h3>
+            <h3 className="countent__title">{t("title")} {t(`country.${countryCode}`)}</h3>
             
             { newsData ?
                 contentView == ContentView.square ? 

@@ -18,6 +18,7 @@
     &__item {
         display: grid;
         grid-template-columns: 1fr 4fr;
+        align-items: center;
         margin: 1rem 0;
         padding: 1rem;
         border-radius: .3rem;

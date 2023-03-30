@@ -4,6 +4,7 @@
     font-size: 2rem;
     margin-top: 1rem;
 
+    &__title,
     &__content,
     &__author,
     &__url {
@@ -11,7 +12,12 @@
         span {
             font-weight: bolder;
             color: $color-country-hover;
+            margin-right: .8rem;
         }
+    }
+    &__title {
+        text-transform: uppercase;
+        font-weight: bolder;
     }
     .link {
         word-break: break-all;
