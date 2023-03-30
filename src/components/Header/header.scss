@@ -29,47 +29,4 @@
 .menu {
   display: flex;
   align-items: center;
-  &__btn {
-    display: none;
-
-    @include tablet {
-      &:checked {
-        ~ .menu__toggle {
-          span {
-            &:nth-child(1) {
-              transform: rotate(45deg) translate(2px, 5px);
-            }
-            &:nth-child(2) {
-              opacity: 0;
-            }
-            &:nth-child(3) {
-              transform: rotate(-45deg) translate(2px, -5px);
-            }
-          }
-        }
-      }
-    }
-  }
-  &__toggle {
-    display: none;
-
-    @include tablet {
-      display: block;
-      margin-left: 2rem;
-      cursor: pointer;
-    }
-
-    span {
-      width: 2rem;
-      height: .2rem;
-      display: block;
-      margin-bottom: 3px;
-      background-color: $color-primary;
-      transition: .3s all ease-in-out;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
 }
