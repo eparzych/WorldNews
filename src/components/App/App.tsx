@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import './App.scss';
 import { Header } from "../Header/Header";
 import { Main } from "../Main/Main";
@@ -11,9 +11,9 @@ function App() {
       <div className="app">
         <Header/>
         <Routes>
-          <Route path="/" Component={Main} />
-          <Route path="/country/:countryCode" Component={Main} />
-          <Route path="*" Component={NotFound} />
+          <Route path="/" element={<Navigate to="/country/pl"/>} />
+          <Route path="/country/:countryCode" element={<Main/>} />
+          <Route path="*" element={<NotFound/>} />
         </Routes>
         <Footer/>
       </div>
