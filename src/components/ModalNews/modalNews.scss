@@ -18,6 +18,10 @@
     &__title {
         text-transform: uppercase;
         font-weight: bolder;
+        margin-bottom: 1rem;
+    }
+    &__content {
+        margin-top: 1rem;
     }
     .link {
         word-break: break-all;

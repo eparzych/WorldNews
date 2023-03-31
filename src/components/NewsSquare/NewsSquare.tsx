@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { CiImageOff } from "react-icons/ci";
 import { Article } from "../../types/article";
+import { NewsImg } from "../NewsImg/NewsImg";
 import { ModalNews } from "../ModalNews/ModalNews";
 import "./newsSquare.scss";
 
@@ -15,16 +15,7 @@ export const NewsSquare = (props: IProps) => {
     return(
         <>
             <article className="news-square" onClick={() => setOpen(true)}>
-                <div className="news-square__img">
-                    { article.urlToImage ?
-                        <img src={article.urlToImage} alt="picture" />
-                    :
-                        <div className="img--not-found">
-                            <CiImageOff size="90"/>
-                            <span>Image not found</span>
-                        </div>
-                    }
-                </div>
+                <NewsImg urlToImage={article.urlToImage}/>
                 <div className="news-square__content">
                     <h2 className="content__title">{article.title}</h2>
                     <p className="content__subtitle">{article.source.name}</p>

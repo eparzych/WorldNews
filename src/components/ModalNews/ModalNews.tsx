@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Article } from "../../types/article";
+import { NewsImg } from "../NewsImg/NewsImg";
 import { CustomModal } from "../Modal/Modal";
 import "./modalNews.scss";
 
@@ -19,7 +20,8 @@ export const ModalNews = (props: IProps) => {
             onClose={onClose}
         >
             <article className="article">
-            <h2 className="article__title">{article.title}</h2>
+                <h2 className="article__title">{article.title}</h2>
+                <NewsImg urlToImage={article.urlToImage}/>
                 <p className="article__content">
                     {article?.content}
                 </p>

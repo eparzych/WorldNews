@@ -1,0 +1,24 @@
+.news-square__img {
+    height: 55%;
+    background: #ddd;
+    border-radius: .5rem .5rem 0 0;
+    
+    img {
+        height: 100%;
+        max-height: 40rem;
+        width: 100%;
+        object-fit: cover;
+        border-radius: .5rem .5rem 0 0;
+    }
+
+    .img--not-found {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        border-radius: .5rem .5rem 0 0;
+    }
+}
