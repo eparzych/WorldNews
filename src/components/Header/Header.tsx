@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BsEmojiWink} from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { ModalTask } from "../ModalTask/ModalTask";
+import { LanguageList } from "../LanuageList/LanguageList";
 import { ToggleButton } from "../ToggleButton/ToggleButton";
 import { SidebarButton } from "../SidebarButton/SidebarButton";
 import "./header.scss";
@@ -22,6 +23,7 @@ export const Header = () => {
                 </Link>
                 <button className="btn" onClick={openModalTask}><BsEmojiWink/></button>
                 <nav className="menu">
+                    <LanguageList/>
                     <ToggleButton/>
                     <SidebarButton/>
                 </nav>

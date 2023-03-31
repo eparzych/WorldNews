@@ -28,7 +28,7 @@
   
       @include tablet {
         display: block;
-        margin-left: 2rem;
+        margin-left: .5rem;
         cursor: pointer;
       }
   
@@ -36,7 +36,7 @@
         width: 2rem;
         height: .2rem;
         display: block;
-        margin-bottom: 3px;
+        margin-bottom: .3rem;
         background-color: $color-primary;
         transition: .3s all ease-in-out;
   

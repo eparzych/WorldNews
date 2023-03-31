@@ -1,0 +1,76 @@
+@import "../../styles/variables";
+
+.langList {
+    display: flex;
+    justify-content: center;
+    width: 6rem;
+    margin: 0 .5rem;
+    padding: .75rem 1rem;
+    font-size: 2rem;
+    background-color: $color-grey;
+    border-radius: .6rem;
+    border: 1px solid $color-grey;
+    cursor: pointer;
+    .language-selected {
+        display: flex;
+        flex-direction: row;
+        color: $color-dark-grey;
+        font-weight: bolder;
+        text-transform: uppercase;
+        .country-flag {
+            padding-right: 1rem;
+            align-self: center;
+        }
+    }
+
+    .drop-item {
+        display: none;
+    }
+
+    .list-open {
+        position: absolute;
+        top: 5.1rem;
+        width: 6rem;
+        z-index: -1;
+        .drop-item {
+            display: block;
+            transform-origin: top center;
+            transition: background-color .5s;
+    
+            @for $i from 1 through 2 {
+                &:nth-child(#{$i}) {
+                    animation-name: topToBottom;
+                    animation-duration: 400ms;
+                    animation-delay: (150ms * $i) - 300;
+                    animation-timing-function: ease-in-out;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .item {
+                @include center;
+                height: 5.5rem;
+                background-color: $color-sidebar;
+                opacity: .9;
+                transition: opacity .2s;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 1;
+                }
+            }
+            .last {
+                border-radius:  0 0 1.5rem 1.5rem;
+            }   
+        }
+
+    }
+    @keyframes topToBottom {
+        0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+        }
+        100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+        }
+    } 
+}
