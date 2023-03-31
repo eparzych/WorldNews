@@ -23,6 +23,13 @@
             "de": "Niemcy",
             "fr": "Francja",
             "lt": "Litwa"
+        },
+        "aboutMe": {
+            "title": "Cześć,",
+            "p1": "Miło mi, że odwiedzasz moją aplikację. :) Cały challenge był dla mnie dość dużym jak i bardzo przyjemnym wyzwaniem. Bardzo podoba mi się dobór stacku React + Redux + TypeScript + RTL. Jest to dokładnie ten stack, w którym chciałabym się rozwijać i robić projekty.",
+            "p2": "W całym challengu oprócz doboru stacku najbardziej podobała mi się możliwość projektowania aplikacji od zera oraz zaprojektowanie samego UI/UX aplikacji. Do stylowania komponentów wybrałam scss zamiast MUI, żeby aplikacja była bardziej unikatowa, a nie powtarzalna z gotowych komponentów.",
+            "p3": "Największy problem sprawił mi licznik w footerze, z którym też nie wyrobiłam się do końca chellengu. Do tej pory dane pobierane z API trzymałam w lokalnym stanie komponentu Content, przez co były trudne do wyświetlenia w footerze. Zaczęłam robić testy, jednak nie miałam z nimi wczesniej doświadczenia, zabrakło mi trochę wiecej czasu, żeby je dokończyć - jset to task w aplikacji do dokończenia w przysżłości.",
+            "p4": "Niestety tuż przed samym deadlinem zauważyłam, że bezpłatne API działa tylko lokalnie, bo w darmowym pakiecie nie ma obsługi cors, przez co nie mogłam zrobić wersji live na heroku."
         }
     }
 }

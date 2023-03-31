@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+@import "../../styles/breakpoints";
+
+.aboutMe {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    &__text {
+        p {
+            padding: 1rem 0;
+        }
+    }
+    &__img {
+        @include center;
+        .hedgehog {
+            max-height: 30rem;
+        }
+    }
+}

@@ -8,7 +8,8 @@
     background-color: white;
     width: calc(100% - 7rem);
     max-width: 90rem;
-    overflow-y: auto;
+    max-height: 100vh;
+    overflow: auto;
     padding: 3.2rem;
     padding-right: 3.8rem;
     border-radius: .5rem;

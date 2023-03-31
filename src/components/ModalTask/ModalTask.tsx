@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
 import { CustomModal } from "../Modal/Modal";
+import hedgehog from "../../assets/hedgehog.jpg";
+import "./modalTask.scss";
 
 interface IProps {
     isOpen: boolean;
@@ -7,16 +10,26 @@ interface IProps {
 
 export const ModalTask = (props: IProps) => {
     const { isOpen, onClose } = props;
+    const { t } = useTranslation();
 
     return (
         <CustomModal
             isOpen={isOpen}
             onClose={onClose}
         >
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias possimus quae tenetur obcaecati illum blanditiis? Repellat voluptatum, non provident harum aliquid, ad, quos optio laudantium quis ea magnam ducimus vero.Hic debitis eligendi accusantium fugit suscipit molestias aut beatae ducimus tenetur eaque vero doloribus ex facere cupiditate dolor, numquam aliquam ipsam in quibusdam quae? Expedita pariatur possimus corrupti blanditiis suscipit.
-                Odit, quo vel reprehenderit quos cumque tempora voluptatum eos minima beatae quidem ex fugit molestias harum ducimus excepturi, quia sapiente sunt repudiandae numquam sit ipsam et ut? Non, mollitia commodi.
-            </p>
+            <div className="aboutMe">
+                <div className="aboutMe__text">
+                    <h2>{t("aboutMe.title")}</h2> 
+                    <p>{t("aboutMe.p1")}</p>
+                    <p>{t("aboutMe.p2")}</p>
+                    <p>{t("aboutMe.p3")}</p>
+                    <p>{t("aboutMe.p4")}</p>
+                </div>
+                <div className="aboutMe__img">
+                    <img src={hedgehog} alt="Przyjazny jeż" className="hedgehog"/>
+                </div>
+                
+            </div>
         </CustomModal>
     );
 }
