@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import "./content.scss";
 import { NewsSquareList } from "../NewsSquareList/NewsSquareList";
 import { NewsRowList } from "../NewsRowList/NewsRowList";
-import { fetchNews } from "../../api/newsMock";
+import { fetchNews } from "../../api/news";
 import { NewsData } from "../../types/article";
 import { Loader } from "../Loader/Loader";
 
