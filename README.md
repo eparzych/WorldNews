@@ -1,5 +1,5 @@
-# gnNews
-The application was created as part of the challenge and is used to display current news from various countries. Live demo [_here_](https://gn-news.herokuapp.com)
+# WorldNews
+The application was created as part of the challenge and is used to display current news from various countries. Live demo [_here_](https://world-news-app.herokuapp.com)
 
 ## Technologies Used
 - React
