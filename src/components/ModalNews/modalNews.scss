@@ -3,9 +3,11 @@
 .article {
     font-size: 2rem;
     margin-top: 1rem;
+    max-height: 80vh;
+    overflow: hidden;
 
     &__title,
-    &__content,
+    &__description,
     &__author,
     &__url {
         padding: .5rem 0;
@@ -22,6 +24,8 @@
     }
     &__content {
         margin-top: 1rem;
+        max-height: 25vh;
+        overflow: auto;
     }
     .link {
         word-break: break-all;

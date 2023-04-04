@@ -8,12 +8,15 @@
     background-color: white;
     width: calc(100% - 7rem);
     max-width: 90rem;
-    max-height: 100vh;
-    overflow: auto;
+    max-height: 95vh;
     padding: 3.2rem;
     padding-right: 3.8rem;
     border-radius: .5rem;
     color: black;
+
+    &__content {
+      max-height: 85vh;
+    }
   }
 
   .btn--close {

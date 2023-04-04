@@ -22,19 +22,21 @@ export const ModalNews = (props: IProps) => {
             <article className="article">
                 <h2 className="article__title">{article.title}</h2>
                 <NewsImg urlToImage={article.urlToImage}/>
-                <p className="article__content">
-                    {article?.content}
-                </p>
-                <p className="article__author">
-                    <span>{t("author")}</span>
-                    {article?.author}
-                </p>
-                <p className="article__url">
-                    <span>{t("seeMore")}</span>
-                    <a href={article?.url} className="link" target="_blank">
-                        {article?.url}
-                    </a>
-                </p>
+                <div className="article__content">
+                    <p className="article__description">
+                        {article?.content}
+                    </p>
+                    <p className="article__author">
+                        <span>{t("author")}</span>
+                        {article?.author}
+                    </p>
+                    <p className="article__url">
+                        <span>{t("seeMore")}</span>
+                        <a href={article?.url} className="link" target="_blank">
+                            {article?.url}
+                        </a>
+                    </p>
+                </div>
             </article>
         </CustomModal>
     );
