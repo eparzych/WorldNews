@@ -15,7 +15,7 @@ export const NewsSquare = (props: IProps) => {
     return(
         <>
             <article className="news-square" onClick={() => setOpen(true)}>
-                <NewsImg urlToImage={article.urlToImage}/>
+                <NewsImg urlToImage={article.image}/>
                 <div className="news-square__content">
                     <h2 className="content__title">{article.title}</h2>
                     <p className="content__subtitle">{article.source.name}</p>

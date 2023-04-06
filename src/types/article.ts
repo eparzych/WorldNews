@@ -1,20 +1,19 @@
 
 export interface Article {
     source: {
-      id: string | null;
       name: string;
+      url: string;
     }
     author: string;
     title: string;
     description: string;
     url: string;
-    urlToImage: string;
+    image: string;
     publishedAt: string;
     content: string;
   }
 
 export interface NewsData {
-    status: string;
-    totalResults: number;
+    totalArticles: number;
     articles: Article[];
 }

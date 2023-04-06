@@ -21,7 +21,7 @@ export const ModalNews = (props: IProps) => {
         >
             <article className="article">
                 <h2 className="article__title">{article.title}</h2>
-                <NewsImg urlToImage={article.urlToImage}/>
+                <NewsImg urlToImage={article.image}/>
                 <div className="article__content">
                     <p className="article__description">
                         {article?.content}
