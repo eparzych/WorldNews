@@ -11,7 +11,7 @@ function App() {
       <div className="app">
         <Header/>
         <Routes>
-          <Route path="/" element={<Navigate to="/country/pl"/>} />
+          <Route path="/" element={<Navigate to="/country/us"/>} />
           <Route path="/country/:countryCode" element={<Main/>} />
           <Route path="*" element={<NotFound/>} />
         </Routes>

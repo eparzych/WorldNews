@@ -7,22 +7,18 @@
         "seeMore": "See more:",
         "title": "NEWS FROM THE COUNTRY:",
         "country": {
-            "pl": "Poland",
             "us": "USA",
-            "ar": "Argentina",
-            "at": "Austria",
             "au": "Australia",
-            "be": "Belgium",
-            "bg": "Bulgaria",
             "br": "Brazil",
             "ca": "Canada",
-            "ch": "Switzerland",
-            "co": "Columbia",
-            "cu": "Cuba",
-            "cz": "Czech Republic",
+            "cn": "China",
             "de": "Germany",
             "fr": "France",
-            "lt": "Lithuania"
+            "il": "Israel",
+            "it": "Italy",
+            "ru": "Russian Federation",
+            "es": "Spain",
+            "pt": "Portugal"
         }
     }
 }

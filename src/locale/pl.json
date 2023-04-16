@@ -7,22 +7,18 @@
         "seeMore": "Zobacz więcej pod:",
         "title": "INFORMACJE Z KRAJU:",
         "country": {
-            "pl": "Polska",
             "us": "USA",
-            "ar": "Argentyna",
-            "at": "Austria",
             "au": "Australia",
-            "be": "Belgia",
-            "bg": "Bułgaria",
             "br": "Brazylia",
             "ca": "Kanada",
-            "ch": "Szwajcaria",
-            "co": "Kolumbia",
-            "cu": "Kuba",
-            "cz": "Czechy",
+            "cn": "Chiny",
             "de": "Niemcy",
             "fr": "Francja",
-            "lt": "Litwa"
+            "il": "Izrael",
+            "it": "Włochy",
+            "ru": "Rosja",
+            "es": "Hiszpania",
+            "pt": "Portugalia"
         }
     }
 }
